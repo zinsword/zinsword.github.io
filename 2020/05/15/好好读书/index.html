@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="zinsword, AI" />
+    <title>
+        Je pense, donc je suis
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Je pense, donc je suis
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Je pense, donc je suis
+        </a>
+    </h1>
+    <h2 class="desc">
+        我思故我在
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a href="https://github.com/zinsword" target="_blank" rel="noopener">
+                    Github
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://www.kaggle.com/zinsword" target="_blank" rel="noopener">
+                    Kaggle
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+    
+    
+    <h2 class="post-title">
+        好好读书
+    </h2>
+    <ul class="post-date">
+        <li>
+            2020-05-15
+        </li>
+        <li>
+            Sam Zhou
+        </li>
+    </ul>
+    <div class="post-content">
+        <p>1、我一生的嗜好，除了革命之外，就是读书。我一天不读书，就不能够生活。——孙中山</p>
+<p>2、读书破万卷，下笔如有神。——杜甫</p>
+<p>3、读万卷书，行万里路。　——顾炎武</p>
+<p>4、读书之法无他，惟是笃志虚心，反复详玩，为有功耳。　——朱熹</p>
+<p>5、读书无嗜好，就能尽其多。不先泛览群书，则会无所适从或失之偏好，广然后深，博然后专。　——鲁迅</p>
+<p>6、读书之法，在循序渐进，熟读而精思。　——朱煮</p>
+<p>7、读书务在循序渐进；一书已熟，方读一书，勿得卤莽躐等，虽多无益。　——胡居仁</p>
+<p>8、读书是学习，摘抄是整理，写作是创造。　——吴晗</p>
+<p>9、看书不能信仰而无思考，要大胆地提出问题，勤于摘录资料，分析资料，找出其中的相互关系，是做学问的一种方法。——顾颉刚</p>
+<p>10、书犹药也，善读之可以医愚。　——刘向</p>
+<p>11、读书破万卷，胸中无适主，便如暴富儿，颇为用钱苦。　——郑板桥</p>
+<p>12、知古不知今，谓之落沉。知今不知古，谓之盲瞽。　——王充</p>
+<p>13、举一纲而万目张，解一卷而众篇明。　——郑玄</p>
+<p>14、知识，主要是靠主动“抓”出来的，不是靠“教”出来的。　——钱三强</p>
+<p>15、学而不厌，诲人不倦。　——孔丘</p>
+<p>16、欲速是读书第一大病，功夫中在绵密不间断，不在不速也。　——陆珑</p>
+<p>17、不积跬步，无以至千里；不积小流，无以成江海。　——荀况</p>
+<p>18、学而时习之，不亦悦乎！　——孔丘</p>
+<p>19、倘能生存，我当然仍要学习。　——鲁迅</p>
+<p>20、热爱书吧——这是知识的泉源！　——高尔基</p>
+<p>21、我读书越多，书籍就使我和世界越接近，生活对我也变得越加光明和有意义。——高尔基</p>
+<p>22、书籍是在时代的波涛中航行的思想之船，它小心翼翼地把珍贵的货物运送给一代又一代。　——弗·培根</p>
+<p>23、读书对于智慧，也象体操对于身体一样。　——艾迪生</p>
+<p>24、当我们第一遍读一本好书的时候，我们仿佛觉得找到了一个朋友；当我们再一次读这本书的时候，仿佛又和老朋友重逢。——伏尔泰</p>
+<p>25、理想的书籍，是智慧的钥匙。　——列·托尔斯泰</p>
+<p>26、书是人类进步的阶梯。　——高尔基</p>
+<p>27、读一本好书，就是和许多高尚的人谈话。　——歌德</p>
+<p>28、书籍是人类知识的总结。书籍是全世界的营养品。　——莎士比亚</p>
+<p>29、立身以立学为先，立学以读书为本——欧阳修</p>
+<p>30、好的书籍是最贵重的珍宝。　——别林斯基</p>
+<p>31、任何时候我也不会满足，越是多读书，就越是深刻地感到不满足，越感到自己知识贫乏。　——马克思</p>
+<p>32、书籍便是这种改造灵魂的工具。人类所需要的，是富有启发性的养料。而阅读，则正是这种养料。　——雨果</p>
+<p>33、喜欢读书，就等于把生活中寂寞的辰光换成巨大享受的时刻。　——孟德斯鸠</p>
+<p>34、如果我阅读得和别人一样多，我就知道得和别人一样少。　——霍伯斯</p>
+<p>35、读书有三种方法：一种是读而不懂，另一种是既读也懂，还有一种是读而懂得书上所没有的东西。　——克尼雅日宁</p>
+<p>36、要学会读书，必须首先读的非常慢，直到最后值得你精读的一本书，还是应该很慢地读。——法奇</p>
+<p>37、了解一页书，胜于匆促地阅读一卷书。　——麦考利</p>
+<p>38、读书而不回想，犹如食物而不消化。　——伯克</p>
+<p>39、读书而不能运用，则所读书等于废纸。　——华盛顿</p>
+<p>40、书籍使一些人博学多识，但也使一些食而不化的人疯疯颠颠。　——彼特拉克</p>
+<p>41、生活在我们这个世界里，不读书就完全不可能了解人。　——高尔基</p>
+<p>42、读书越多，越感到腹中空虚。　——雪莱</p>
+<p>43、读书是我唯一的娱乐。我不把时间浪费于酒店、赌博或任何一种恶劣的游戏；而我对于事业的勤劳，仍是按照必要，不倦不厌。　——富兰克林</p>
+<p>44、书读的越多而不加思索，你就会觉得你知道得很多；但当你读书而思考越多的时候，你就会清楚地看到你知道得很少。——伏尔泰</p>
+<p>45、谁都不会死读一本书。每个人都从书中研究自已，要不是发现自己就是控制自己。　——罗曼·罗兰</p>
+<p>46、在所阅读的书本中找出可以把自己引到深处的东西，把其他一切统统抛掉，就是抛掉使头脑负担过重和会把自己诱离要点的一切。　——爱因斯坦</p>
+<p>47、读书而不思考，等于吃饭而不消化。　——波尔克</p>
+<p>48、读书有三到，谓心到，眼到，口到。——朱熹</p>
+<p>49、黑发不知勤学早，白发方悔读书迟。——颜真卿</p>
+<p>50、书卷多情似故人，晨昏忧乐每相亲。——于谦</p>
+<p>51、少壮不努力，老大徒伤悲。——《汉乐府·长歌行》</p>
+<p>52、发奋识遍天下字，立志读尽人间书。——苏轼</p>
+<p>53、鸟欲高飞先振翅，人求上进先读书。——李苦禅</p>
+<p>54、立志宜思真品格，读书须尽苦功夫。——阮元</p>
+<p>55、熟读唐诗三百首，不会作诗也会吟。——孙洙《唐诗三百首序》</p>
+<p>56、书到用时方恨少，事非经过不知难。——陆游</p>
+<p>57、旧书不厌百回读，熟读精思子自知。——苏轼</p>
+<p>58、书痴者文必工，艺痴者技必良。——蒲松龄</p>
+<p>59、读书百遍，其义自见。——《三国志》</p>
+<p>60、奇文共欣赏，疑义相如析。——陶渊明</p>
+<p>61、读书之法，在循序而渐进，熟读而精思。——朱熹</p>
+<p>62、非学无以广才，非志无以成学。——诸葛亮</p>
+
+    </div>
+</article>
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>
